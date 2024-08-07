@@ -2,59 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=በቅርቡ, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html,body{
-height: 100%;
-margin: 0;
-}
-body{
-display:flex;
-align-items:center ;
-justify-content: center;
-min-height: 300px;
-background-color: black;
-}
-#loading{
---size:300px;
---quarter: calc(var(--size) / 4);
-width: var(--size);
-height: var(--quarter);    
-display:flex;
-align-items: center;
-justify-content: space-around;
-border:calc(var(--size) / 35) solid cyan;
-border-top:none;
-}
-#loading>div{
-width:calc(var(--quarter)  * .9);
-height: calc( var(--quarter) * .9);   
-background-color: cyan;    
-border-radius: 50%;
-animation-name: moveH;
-animation-duration: .7s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-}
-#first{
-transform-origin: calc( var(--size)  / 2 - var(--quarter)  * .05);
-animation-name: jump !important;
-}
-@keyframes jump { 
-to { transform: rotate(180deg)}
-}
-@keyframes moveH { 
-to { transform: translate( calc(var(--quarter) * -1))}
-}  
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div id="loading">
-        <div id="first"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <div class="scene" style="--total: 25;">
+        <div class="move">
+          <i style="--i: 0;"></i>
+          <i style="--i: 1;"></i>
+          <i style="--i: 2;"></i>
+          <i style="--i: 3;"></i>
+          <i style="--i: 4;"></i>
+          <i style="--i: 5;"></i>
+          <i style="--i: 6;"></i>
+          <i style="--i: 7;"></i>
+          <i style="--i: 8;"></i>
+          <i style="--i: 9;"></i>
+          <i style="--i: 10;"></i>
+          <i style="--i: 11;"></i>
+          <i style="--i: 12;"></i>
+          <i style="--i: 13;"></i>
+          <i style="--i: 14;"></i>
+          <i style="--i: 15;"></i>
+          <i style="--i: 16;"></i>
+          <i style="--i: 17;"></i>
+          <i style="--i: 18;"></i>
+          <i style="--i: 19;"></i>
+          <i style="--i: 20;"></i>
+          <i style="--i: 21;"></i>
+          <i style="--i: 22;"></i>
+          <i style="--i: 23;"></i>
+          <i style="--i: 24;"></i>
+          <i style="--i: 25;"></i>
+        </div>
+      </div>
 </body>
 </html>
